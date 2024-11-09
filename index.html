@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Designalytics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header__logo">
+          <img src="/assets/logo.svg" alt="Designalytics Logo" />
+        </div>
+
+        <div class="header__leftcol">
+          <div class="header__userlogged">
+            <img
+              src="/assets/userm1.jpg"
+              alt="User John Smith"
+              class="header__userpic"
+            />
+            <h3 class="header__username">John Smith</h3>
+          </div>
+
+          <a href="#" role="button" class="header__sign-btn hide-mobile"
+            >Signout</a
+          >
+
+          <a
+            href="#"
+            role="button"
+            aria-label="Mobile navigation menu"
+            class="open-menu hide-tablet hide-pc"
+          >
+            <img src="/assets/open-menu.svg" alt="Navigation menu" />
+          </a>
+        </div>
+      </header>
+      <div class="wrapper2">
+        <aside>
+          <nav class="nav">
+            <a href="#" role="button" class="nav__close hide-tablet hide-pc">
+              <img src="/assets/mobile-exit.svg" alt="Close nav menu" />
+            </a>
+            <ul class="nav__links">
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  <img
+                    src="/assets/icon-home.svg"
+                    alt="Home page"
+                    class="nav__link__img"
+                  />
+                  Home
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  <img
+                    src="/assets/icon-messages.svg"
+                    alt="Messages page"
+                    class="nav__link__img"
+                  />
+                  Messages
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  <img
+                    src="/assets/icon-account.svg"
+                    alt="Account page"
+                    class="nav__link__img"
+                  />
+                  Account
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  <img
+                    src="/assets/icon-support.svg"
+                    alt="Support page"
+                    class="nav__link__img"
+                  />
+                  Support
+                </a>
+              </li>
+            </ul>
+            <div class="premium hide-mobile hide-tablet">
+              <div class="premium__heading">
+                <h2>Go Premium!</h2>
+                <img
+                  class="premium-btn"
+                  src="/assets/right-btn.svg"
+                  alt="read more about subscription"
+                />
+              </div>
+              <p>For $5 extra, you can avail all of these other features.</p>
+            </div>
+          </nav>
+        </aside>
+
+        <main class="content">
+          <div class="content__sales">
+            <div class="sales__text">
+              <h1>13</h1>
+              <p>Sales</p>
+            </div>
+            <img
+              class="sales__chart"
+              src="/assets/chart-top.svg"
+              alt="today's sales chart"
+            />
+          </div>
+
+          <div class="stats">
+            <div class="stats__received">
+              <h2>$756</h2>
+              <p>Today's Sales</p>
+            </div>
+            <div class="stats__revenue">
+              <h2>$4,301</h2>
+              <p>Last 7 days</p>
+            </div>
+            <div class="stats__conversion">
+              <h2>18<span>%</span></h2>
+              <p>Conversion</p>
+            </div>
+          </div>
+
+          <div class="earning">
+            <h2>Earnings &amp; Visitors</h2>
+            <div class="earning__chart">
+              <img src="/assets/chart.svg" alt="earnings chart" />
+            </div>
+          </div>
+
+          <div class="visitors__section">
+            <ul class="visitors">
+              <li class="visitor">
+                <div class="user">
+                  <img src="/assets/userm1.jpg" alt="user image" />
+                  <div>
+                    <h3>John Smith</h3>
+                    <p>LinkedIn</p>
+                  </div>
+                </div>
+                <a href="#" class="visit__btn">
+                  <img src="/assets/right-btn.svg" alt="See info..." />
+                </a>
+              </li>
+
+              <li class="visitor">
+                <div class="user">
+                  <img src="/assets/user.jpg" alt="user image" />
+                  <div>
+                    <h3>Jane Doe</h3>
+                    <p>Google Ads</p>
+                  </div>
+                </div>
+                <a href="#" class="visit__btn">
+                  <img src="/assets/right-btn.svg" alt="See info..." />
+                </a>
+              </li>
+
+              <li class="visitor">
+                <div class="user">
+                  <img src="/assets/user3.jpg" alt="user image" />
+                  <div>
+                    <h3>Emma Johnson</h3>
+                    <p>Facebook Ads</p>
+                  </div>
+                </div>
+                <a href="#" class="visit__btn">
+                  <img src="/assets/right-btn.svg" alt="See info..." />
+                </a>
+              </li>
+
+              <li class="visitor">
+                <div class="user">
+                  <img src="/assets/userm2.jpg" alt="user image" />
+                  <div>
+                    <h3>Michael Brown</h3>
+                    <p>Email Newsletter</p>
+                  </div>
+                </div>
+                <a href="#" class="visit__btn">
+                  <img src="/assets/right-btn.svg" alt="See info..." />
+                </a>
+              </li>
+
+              <li class="visitor">
+                <div class="user">
+                  <img src="/assets/user4.jpg" alt="user image" />
+                  <div>
+                    <h3>Alice Williams</h3>
+                    <p>Instagram</p>
+                  </div>
+                </div>
+                <a href="#" class="visit__btn">
+                  <img src="/assets/right-btn.svg" alt="See info..." />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
