@@ -110,8 +110,9 @@ header {
   width: 36px;
   height: 36px;
   object-fit: cover;
+  aspect-ratio: 1;
   object-position: top;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 .header__username {
   font-size: var(--text-medium);
@@ -229,6 +230,7 @@ header {
 .stats span {
   color: var(--color-para);
   font-size: var(--text-para);
+  text-wrap: nowrap;
 }
 
 /* Earnings Chart */
@@ -278,19 +280,23 @@ ul {
   gap: 0.8em;
 }
 .user h3 {
-  font-size: var(--text-medium) (--text-medium);
+  font-size: clamp(0.62rem, 0.06666666666666676rem + 2.333333333333333vw, 1rem);
 }
 .user p {
   text-transform: none;
-  font-size: var(--text-medium) 0.8rem;
+  font-size: clamp(
+    0.6rem,
+    0.1833333333333333rem + 1.6666666666666667vw,
+    0.85rem
+  );
   color: var(--color-link);
   margin-top: 0.2em;
 }
 .visit__btn {
-  width: 40px;
+  width: 30px;
   background-color: var(--color-box);
-  padding: 0.75em 1em;
-  border-radius: 0.4em;
+  padding: 4px 7px;
+  border-radius: 0.3em;
   transition: background 0.3s ease-out;
 }
 .visit__btn:hover {
@@ -414,10 +420,10 @@ ul {
     width: unset;
     height: unset;
     margin: 0;
+    height: 100%;
     border-radius: 0.6em;
-    margin-top: 2em;
     display: flex;
-    gap: 4em;
+    gap: 2em;
   }
   .nav__item {
     justify-content: unset;
@@ -471,6 +477,7 @@ ul {
   .wrapper2 {
     display: flex;
     gap: 2em;
+    margin-top: 2em;
   }
 
   aside {
@@ -480,7 +487,7 @@ ul {
   /* Main content */
   .content {
     flex: 3 1 0;
-    margin-left: 0;
+    margin: 0;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 2fr;
     column-gap: 2em;
@@ -492,7 +499,7 @@ ul {
     padding-bottom: 0;
   }
   .sales__chart {
-    top: 70px;
+    top: 55px;
   }
 
   .stats {
@@ -514,8 +521,8 @@ ul {
   .visitors {
     grid-column: 2/3;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin: 0;
   }
   .visitors__section {
@@ -524,6 +531,22 @@ ul {
 
   .visitor {
     justify-content: space-between;
+  }
+
+  .user h3 {
+    font-size: clamp(
+      0.85rem,
+      -0.08571428571428563rem + 1.4285714285714284vw,
+      1.2rem
+    );
+  }
+  .user p {
+    text-transform: none;
+    font-size: clamp(
+      0.75rem,
+      0.08163265306122458rem + 1.0204081632653061vw,
+      1rem
+    );
   }
   .wrapper {
     margin: 6em auto;
